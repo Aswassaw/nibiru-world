@@ -1,0 +1,118 @@
+/* Ini adalah style untuk halaman login dan register, untuk mengatur ukuran formnya, backgroundnya, radiusnya dan paddingnya*/
+.formlogres {
+    background-color: rgb(255, 255, 255);
+    border-radius: 2%;
+    padding: 20px;
+}
+
+/* Mengatur desain pada isinya */
+.formlogres p {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Mengatur ukuran button pada form */
+.formlogres button {
+    width: 100%;
+}
+
+/* Ini untuk mengatur ukuran gambar pada halaman profile */
+.fotoprofile img {
+    width: 320;
+    height: 320;
+}
+
+/* Ini untuk mengatur ukuran gambar pada halaman friend */
+.fotofriend img {
+    width: 150;
+    height: 150;
+}
+
+/* Ini untuk mengatur ukuran gambar pada halaman admin */
+.fotoadmin img {
+    width: 90;
+    height: 90;
+}
+
+/* Mengatur ukuran text area */
+textarea {
+    resize: none;
+}
+
+/* Mengatur desain hr */
+hr {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* Mengatur desain pada body */
+body {
+    /* Agar tampilan tetap bagus pada saat navbar di fix-top */
+    padding-top: 70px;
+    background-color: rgb(240, 240, 240);
+    /* background-image: url('../../img/bg/bg.jpg'); */
+    /* background-size: cover; */
+}
+
+.dropdown-kanan {
+    cursor: pointer;
+}
+
+.table > tbody > tr > * {
+    vertical-align: middle;
+}
+
+/* Menghilangkan garis bawah padasetiap link */
+a:link {
+    text-decoration: none;
+}
+
+/* CSS untuk tombol back-to-top */
+#Back-to-top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+    transition: all .5s;
+    background: #008c5f url('../../img/top/top.webp') no-repeat center center;
+    background-size: 50px 50px
+}
+
+/* Hover untuk back-to-top */
+#Back-to-top:hover {
+    background: #1d2129 url("../../img/top/top-hover.webp") no-repeat center center;
+    background-size: 50px 50px
+}
+
+/* CSS untuk tombol back-to-top */
+.render-page {
+    width: 300px;
+    height: 18px;
+    position: fixed;
+    top: 85px;
+    right: 20px;
+    z-index: 99;
+    transition: all .5s;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Ketika teman disorot */
+.teman:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+/* Ketika notification disorot */
+.notification:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+/* Border teks tie background */
+.text-status-background {
+    font-weight: bold;
+    font-family: calibri;
+    -webkit-text-stroke: 0.12px white;
+}
