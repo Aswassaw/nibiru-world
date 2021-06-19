@@ -24,7 +24,7 @@ NibiruWorld Sosmed adalah sebuah aplikasi sosial media sederhana yang dibuat men
 
   ### User:
   - Username: user
-  - Password: user123
+  - Password: user1234
 
 ## Bantuan
 Jika Anda membutuhkan bantuan, hubungi saya di email: andrypeb27@protonmail.com atau andrypeb227@gmail.com.
