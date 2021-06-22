@@ -12,7 +12,7 @@ use CodeIgniter\Filters\FilterInterface;
 //Membuat class UsersCheck yang mengimplementasikan FilterInterface, fci4
 class UsersCheck implements FilterInterface
 {
-    public function before(RequestInterface $request)
+    public function before(RequestInterface $request, $arguments = null)
     {
         // Mendapatkan url saat ini
         $uri = service('uri');
@@ -97,7 +97,7 @@ class UsersCheck implements FilterInterface
 
 
 
-    public function after(RequestInterface $request, ResponseInterface $response)
+    public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     {
     }
 }

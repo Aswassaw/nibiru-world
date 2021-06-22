@@ -11,7 +11,7 @@ use CodeIgniter\Filters\FilterInterface;
 //Membuat class Noauth yang mengimplementasikan FilterInterface, fci4
 class NoAuth implements FilterInterface
 {
-    public function before(RequestInterface $request)
+    public function before(RequestInterface $request, $arguments = null)
     {
         //Jika terdapat sebuah sesi dengan nama isLoggedIn, maka user akan dipaksa redirect ke home
         if (session()->get('isLoggedIn')) {
@@ -19,6 +19,6 @@ class NoAuth implements FilterInterface
         }
     }
 
-    public function after(RequestInterface $request, ResponseInterface $response)
+    public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     { }
 }

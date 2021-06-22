@@ -11,7 +11,7 @@ use CodeIgniter\Filters\FilterInterface;
 //Membuat class Auth yang mengimplementasikan FilterInterface, fci4
 class Auth implements FilterInterface
 {
-    public function before(RequestInterface $request)
+    public function before(RequestInterface $request, $arguments = null)
     {
         //Jika tidak terdapat sebuah sesi dengan nama isLoggedIn, maka user akan dipaksa redirect ke / atau login page
         if (!session()->get('isLoggedIn')) {
@@ -19,6 +19,6 @@ class Auth implements FilterInterface
         }
     }
 
-    public function after(RequestInterface $request, ResponseInterface $response)
+    public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     { }
 }
