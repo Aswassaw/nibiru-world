@@ -8,7 +8,7 @@ NibiruWorld adalah sebuah aplikasi sosial media sederhana yang dibuat menggunaka
 - Pastikan versi PHP yang terinstall adalah versi `7.3` ke atas.
 - Jalankan `composer install`.
 - Ubah file `env` menjadi `.env`, atau gunakan konfigurasi milik Anda sendiri.
-- Konfigurasikan email Anda di `App\Config\Email.php`, ubah isi property `$SMTPUser` dengan email Anda dan `$SMTPPass` dengan password email Anda.
+- Konfigurasikan email Anda di `App\Config\Email.php`, ubah isi property `SMTPHost` dengan host email Anda, `$SMTPUser` dengan email Anda dan `$SMTPPass` dengan password email Anda.
 - Buat database bernama `nibiruworld`.
 - Import database dari file sql yang sudah disertakan dalam repository.
 - Jalankan `php spark serve`.
