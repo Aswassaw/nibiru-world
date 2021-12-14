@@ -1,37 +1,44 @@
-<?php namespace Config;
+<?php
+
+namespace Config;
+
+use CodeIgniter\Validation\CreditCardRules;
+use CodeIgniter\Validation\FileRules;
+use CodeIgniter\Validation\FormatRules;
+use CodeIgniter\Validation\Rules;
 
 class Validation
 {
-	//--------------------------------------------------------------------
-	// Setup
-	//--------------------------------------------------------------------
+    //--------------------------------------------------------------------
+    // Setup
+    //--------------------------------------------------------------------
 
-	/**
-	 * Stores the classes that contain the
-	 * rules that are available.
-	 *
-	 * @var array
-	 */
-	public $ruleSets = [
-		\CodeIgniter\Validation\Rules::class,
-		\CodeIgniter\Validation\FormatRules::class,
-		\CodeIgniter\Validation\FileRules::class,
-		\CodeIgniter\Validation\CreditCardRules::class,
-		\App\Validation\UserRules::class, //Validasi ketika login
-	];
+    /**
+     * Stores the classes that contain the
+     * rules that are available.
+     *
+     * @var string[]
+     */
+    public $ruleSets = [
+        Rules::class,
+        FormatRules::class,
+        FileRules::class,
+        CreditCardRules::class,
+        \App\Validation\UserRules::class, //Validasi ketika login
+    ];
 
-	/**
-	 * Specifies the views that are used to display the
-	 * errors.
-	 *
-	 * @var array
-	 */
-	public $templates = [
-		'list'   => 'CodeIgniter\Validation\Views\list',
-		'single' => 'CodeIgniter\Validation\Views\single',
-	];
+    /**
+     * Specifies the views that are used to display the
+     * errors.
+     *
+     * @var array<string, string>
+     */
+    public $templates = [
+        'list'   => 'CodeIgniter\Validation\Views\list',
+        'single' => 'CodeIgniter\Validation\Views\single',
+    ];
 
-	//--------------------------------------------------------------------
-	// Rules
-	//--------------------------------------------------------------------
+    //--------------------------------------------------------------------
+    // Rules
+    //--------------------------------------------------------------------
 }

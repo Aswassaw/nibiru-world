@@ -8,22 +8,22 @@ $routes = Services::routes();
 // Load the system's routing file first, so that the app and ENVIRONMENT
 // can override as needed.
 if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
-	require SYSTEMPATH . 'Config/Routes.php';
+    require SYSTEMPATH . 'Config/Routes.php';
 }
 
-/**
+/*
  * --------------------------------------------------------------------
  * Router Setup
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Users');
+$routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
 
-/**
+/*
  * --------------------------------------------------------------------
  * Route Definitions
  * --------------------------------------------------------------------
@@ -31,8 +31,6 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-
-// match(['get', 'post']
 
 // Route untuk method pada Controller Login
 $routes->add('/', 'Login::index', ['filter' => 'noauth']); //NoAuth karena user belum login !
@@ -89,14 +87,13 @@ $routes->add('chatList', 'Chat::index', ['filter' => 'auth']); //Admin karena in
 $routes->add('chatPage/(:any)', 'Chat::chatPage/$1', ['filter' => 'auth']); //Admin karena ini adalah halaman khusus admin !
 $routes->add('chatPageAll/(:any)', 'Chat::chatPageAll/$1', ['filter' => 'auth']); //Admin karena ini adalah halaman khusus admin !
 
-
-/**
+/*
  * --------------------------------------------------------------------
  * Additional Routing
  * --------------------------------------------------------------------
  *
  * There will often be times that you need additional routing and you
- * need to it be able to override any defaults in this file. Environment
+ * need it to be able to override any defaults in this file. Environment
  * based routes is one such time. require() additional route files here
  * to make that happen.
  *
@@ -104,5 +101,5 @@ $routes->add('chatPageAll/(:any)', 'Chat::chatPageAll/$1', ['filter' => 'auth'])
  * needing to reload it.
  */
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
-	require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
+    require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }

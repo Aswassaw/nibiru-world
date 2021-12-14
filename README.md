@@ -1,9 +1,9 @@
-# NibiruWorld Sosmed 
+# NibiruWorld 
 
-## Apa itu NibiruWorld Sosmed?
-NibiruWorld Sosmed adalah sebuah aplikasi sosial media sederhana yang dibuat menggunakan CodeIgniter 4 dan Bootstrap 4. Aplikasi ini merupakan Project PKL saya pada tahun 2020.
+## Apa itu NibiruWorld?
+NibiruWorld adalah sebuah aplikasi sosial media sederhana yang dibuat menggunakan CodeIgniter 4 dan Bootstrap 4. Aplikasi ini merupakan Project PKL saya pada tahun 2020.
 
-## Cara Instalasi NibiruWorld Sosmed
+## Cara Instalasi NibiruWorld
 - Pastikan composer terinstall.
 - Pastikan versi PHP yang terinstall adalah versi `7.3` ke atas.
 - Jalankan `composer install`.
@@ -25,6 +25,9 @@ NibiruWorld Sosmed adalah sebuah aplikasi sosial media sederhana yang dibuat men
   ### User:
   - Username: user
   - Password: user1234
+
+## Demo
+https://nibiru-world.000webhostapp.com/
 
 ## Bantuan
 Jika Anda membutuhkan bantuan, hubungi saya di email: andrypeb27@protonmail.com atau andrypeb227@gmail.com.
