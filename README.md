@@ -26,8 +26,5 @@ NibiruWorld adalah sebuah aplikasi sosial media sederhana yang dibuat menggunaka
   - Username: user
   - Password: user1234
 
-## Demo
-https://nibiru-world.000webhostapp.com/
-
 ## Bantuan
 Jika Anda membutuhkan bantuan, hubungi saya di email: andrypeb27@protonmail.com atau andrypeb227@gmail.com.
